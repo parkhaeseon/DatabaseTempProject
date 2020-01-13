@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{664ED053-0AD4-4904-A798-4E0F25D6BE71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DatabaseTeamProject</RootNamespace>
+    <AssemblyName>DatabaseTeamProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Downloads\mysql-connector-net-8.0.16-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addSearchEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSearchEnter.Designer.cs">
+      <DependentUpon>addSearchEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllReservation_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllReservation_Patient.Designer.cs">
+      <DependentUpon>AllReservation_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dba.cs" />
+    <Compile Include="depRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depRank.Designer.cs">
+      <DependentUpon>depRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="docaddredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docaddredit.Designer.cs">
+      <DependentUpon>docaddredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="docEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docEditForm.Designer.cs">
+      <DependentUpon>docEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorDeleteSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorDeleteSearch.Designer.cs">
+      <DependentUpon>doctorDeleteSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorEdit.Designer.cs">
+      <DependentUpon>doctorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorEnter.Designer.cs">
+      <DependentUpon>doctorEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorEnterAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorEnterAddress.Designer.cs">
+      <DependentUpon>doctorEnterAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorinformation.Designer.cs">
+      <DependentUpon>doctorinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorRank.Designer.cs">
+      <DependentUpon>doctorRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empedit.Designer.cs">
+      <DependentUpon>empedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeEnter.Designer.cs">
+      <DependentUpon>employeeEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeIDedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeIDedit.Designer.cs">
+      <DependentUpon>employeeIDedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empRank.Designer.cs">
+      <DependentUpon>empRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editAddress.Designer.cs">
+      <DependentUpon>editAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="findPatientReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="findPatientReservation.Designer.cs">
+      <DependentUpon>findPatientReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manage.Designer.cs">
+      <DependentUpon>manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mypatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mypatients.Designer.cs">
+      <DependentUpon>mypatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myselfinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myselfinfo.Designer.cs">
+      <DependentUpon>myselfinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="namepat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="namepat.Designer.cs">
+      <DependentUpon>namepat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onepat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onepat.Designer.cs">
+      <DependentUpon>onepat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientAddressSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientAddressSearch.Designer.cs">
+      <DependentUpon>patientAddressSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientDelete.Designer.cs">
+      <DependentUpon>patientDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientEdit.Designer.cs">
+      <DependentUpon>patientEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientEditAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientEditAddress.Designer.cs">
+      <DependentUpon>patientEditAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientEnter.Designer.cs">
+      <DependentUpon>patientEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientinformation.Designer.cs">
+      <DependentUpon>patientinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientReservation.Designer.cs">
+      <DependentUpon>patientReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientReservationDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientReservationDelete.Designer.cs">
+      <DependentUpon>patientReservationDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientReservationDeleteSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientReservationDeleteSearch.Designer.cs">
+      <DependentUpon>PatientReservationDeleteSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientUpdateReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientUpdateReservation.Designer.cs">
+      <DependentUpon>patientUpdateReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patRank.Designer.cs">
+      <DependentUpon>patRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patResUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patResUpdate.Designer.cs">
+      <DependentUpon>patResUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pEditSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pEditSearch.Designer.cs">
+      <DependentUpon>pEditSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="possibleDoctorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="possibleDoctorSelect.Designer.cs">
+      <DependentUpon>possibleDoctorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeSelectReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeSelectReservation.Designer.cs">
+      <DependentUpon>TimeSelectReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Totalpeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Totalpeople.Designer.cs">
+      <DependentUpon>Totalpeople.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addSearchEnter.resx">
+      <DependentUpon>addSearchEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllReservation_Patient.resx">
+      <DependentUpon>AllReservation_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depRank.resx">
+      <DependentUpon>depRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docaddredit.resx">
+      <DependentUpon>docaddredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="docEditForm.resx">
+      <DependentUpon>docEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorDeleteSearch.resx">
+      <DependentUpon>doctorDeleteSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorEdit.resx">
+      <DependentUpon>doctorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorEnter.resx">
+      <DependentUpon>doctorEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorEnterAddress.resx">
+      <DependentUpon>doctorEnterAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorinformation.resx">
+      <DependentUpon>doctorinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorRank.resx">
+      <DependentUpon>doctorRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empedit.resx">
+      <DependentUpon>empedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeEnter.resx">
+      <DependentUpon>employeeEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeIDedit.resx">
+      <DependentUpon>employeeIDedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empRank.resx">
+      <DependentUpon>empRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editAddress.resx">
+      <DependentUpon>editAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="findPatientReservation.resx">
+      <DependentUpon>findPatientReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage.resx">
+      <DependentUpon>manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mypatients.resx">
+      <DependentUpon>mypatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myselfinfo.resx">
+      <DependentUpon>myselfinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="namepat.resx">
+      <DependentUpon>namepat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onepat.resx">
+      <DependentUpon>onepat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientAddressSearch.resx">
+      <DependentUpon>patientAddressSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientDelete.resx">
+      <DependentUpon>patientDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientEdit.resx">
+      <DependentUpon>patientEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientEditAddress.resx">
+      <DependentUpon>patientEditAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientEnter.resx">
+      <DependentUpon>patientEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientinformation.resx">
+      <DependentUpon>patientinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientReservation.resx">
+      <DependentUpon>patientReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientReservationDelete.resx">
+      <DependentUpon>patientReservationDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientReservationDeleteSearch.resx">
+      <DependentUpon>PatientReservationDeleteSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientUpdateReservation.resx">
+      <DependentUpon>patientUpdateReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patRank.resx">
+      <DependentUpon>patRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patResUpdate.resx">
+      <DependentUpon>patResUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pEditSearch.resx">
+      <DependentUpon>pEditSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="possibleDoctorSelect.resx">
+      <DependentUpon>possibleDoctorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TimeSelectReservation.resx">
+      <DependentUpon>TimeSelectReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Totalpeople.resx">
+      <DependentUpon>Totalpeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
